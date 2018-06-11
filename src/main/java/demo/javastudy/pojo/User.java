@@ -10,13 +10,13 @@ public class User {
 
     private String name;
 
-    @JsonIgnore
+    @JsonIgnore  //忽略
     private String password;
     private Integer age;
-    @JsonFormat(pattern="yyyy-MM-dd hh:mm:ss a", locale="zh", timezone="GMT+8")
+    @JsonFormat(pattern="yyyy-MM-dd hh:mm:ss a", locale="zh", timezone="GMT+8")   //格式化
     private Date birthday;
 
-    @JsonInclude(Include.NON_NULL)
+    @JsonInclude(Include.NON_NULL)   //null的情况下就不包括
     private String desc;
 
     public String getName() {

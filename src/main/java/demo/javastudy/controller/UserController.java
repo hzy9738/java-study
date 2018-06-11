@@ -25,11 +25,11 @@ public class UserController {
     @RequestMapping("/getUserJson")
     public JSONResult getUserJson(){
         User u = new User();
-        u.setName("hzy");
+        u.setName("hz11y");
         u.setAge(18);
         u.setBirthday(new Date());
         u.setPassword("123");
-
+        u.setDesc("de112312313123123123");
         return JSONResult.ok(u);
     }
 }
